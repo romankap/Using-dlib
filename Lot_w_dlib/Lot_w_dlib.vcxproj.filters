@@ -27,6 +27,12 @@
     <ClInclude Include="Result_Balls.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Raffles_ANN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball_Appearances.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lot_w_dlib.cpp">
@@ -42,6 +48,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Result_Balls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Raffles_ANN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball_Appearances.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

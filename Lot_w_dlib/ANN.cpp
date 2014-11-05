@@ -9,11 +9,6 @@ void ANN::classify() {
     // object is used to represent the column vectors. So the first thing we do here is declare 
     // a convenient typedef for the matrix object we will be using.
 
-    // This typedef declares a matrix with 2 rows and 1 column.  It will be the
-    // object that contains each of our 2 dimensional samples.   (Note that if you wanted 
-    // more than 2 features in this vector you can simply change the 2 to something else)
-
-
     // make an instance of a sample matrix so we can use it below
     sample_type sample;
 
@@ -23,9 +18,7 @@ void ANN::classify() {
     // their default values.  
     mlp::kernel_1a_c net(2,5);
 
-
-
-    // Now let's put some data into our sample and train on it.  We do this
+	// Now let's put some data into our sample and train on it.  We do this
     // by looping over 41*41 points and labeling them according to their
     // distance from the origin.
     for (int i = 0; i < 1000; ++i)

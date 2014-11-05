@@ -9,15 +9,12 @@ const int GENETIC_ALGORITHM_OFFSPRINGS_NUMBER = 1000;
 const int GENETIC_ALGORITHM_ITERATIONS_NUMBER = 200;
 
 const int BALLS_IN_RAFFLE = 6;
-const int MAXIMAL_BALL_NUMBER = 37;
+//const int MAXIMAL_BALL_NUMBER = 37;
 const int MAXIMAL_STRONG_BALL_NUMBER = 7;
 
 const int RAFFLES_NUMBER_ARRAY_LENGTH = 8;
 const int RAFFLES_NUMBER_ARRAY[RAFFLES_NUMBER_ARRAY_LENGTH] = {3, 5, 10, 15, 20, 30, 50, 100}; 
-
-const int MAX_RAFFLES_TO_SWITCH_BALLS = 40;
-
-const bool CLUSTERS_ALG_IS_COMPLEMENTARY = true;
+//-----------------------------------------------------------
 
 const string outputs_path = "C:\\The_Game\\dlib_Lot_Outputs\\";
 const string input_filename_date = ".18.10.14";
@@ -83,3 +80,4 @@ void add_postfixes_to_filenames(int last_ignored_raffles, int final_validation_v
 	sprintf(filename_postfix_number, "-%d_ValLen=%d", last_ignored_raffles, final_validation_vector_length);
 	output_filename_postfix = filename_postfix_number;
 }
+

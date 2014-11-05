@@ -5,6 +5,8 @@
 
 //#define DEBUG_PRINTS
 
+using namespace std;
+
 class Result_Balls
 {
 public:

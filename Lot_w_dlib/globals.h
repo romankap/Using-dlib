@@ -5,6 +5,7 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+
 using namespace std;
 
 ////////////////////////////////////////////////////
@@ -33,15 +34,13 @@ extern const int GENETIC_ALGORITHM_OFFSPRINGS_NUMBER;
 extern const int GENETIC_ALGORITHM_ITERATIONS_NUMBER;
 
 extern const int BALLS_IN_RAFFLE;
-extern const int MAXIMAL_BALL_NUMBER;
+#define MAXIMAL_BALL_NUMBER 37
 extern const int MAXIMAL_STRONG_BALL_NUMBER;
 
 extern const int RAFFLES_NUMBER_ARRAY_LENGTH;
 extern const int RAFFLES_NUMBER_ARRAY[]; 
 
-extern const int MAX_RAFFLES_TO_SWITCH_BALLS;
-
-extern const bool CLUSTERS_ALG_IS_COMPLEMENTARY;
+#define RAFFLES_FOR_PREDICTION = 50;
 
 extern const string input_filename_date;
 extern string output_filename_date;
