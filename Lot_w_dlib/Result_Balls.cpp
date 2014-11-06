@@ -56,6 +56,8 @@ bool Result_Balls::is_ball_in_result(int ball_number)
 
 void insert_results_from_file(ifstream& results_file, vector<Result_Balls>& results_vec)
 {
+	string first_line_unneeded;
+	getline(results_file, first_line_unneeded);
 	while (!results_file.eof())
 	{
 		Result_Balls result;

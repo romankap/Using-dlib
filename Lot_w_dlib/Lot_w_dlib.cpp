@@ -6,6 +6,8 @@
 #include "dlib\any.h"
 #include "ANN.h"
 #include "Result_Balls.h"
+#include "Ball_Appearances.h"
+#include "Ball_ANN.h"
 
 using namespace std;
 
@@ -22,7 +24,7 @@ int main(int argc, char* argv[])
 		open_global_outputs();
 		srand(time(NULL));
 				
-		vector<Result_Balls> all_raffles_vec;
+		std::vector<Result_Balls> all_raffles_vec;
 		ifstream all_raffles_file(string_file_name.c_str());
 		if (all_raffles_file.fail())
 		{
@@ -42,14 +44,22 @@ int main(int argc, char* argv[])
 		//count_range_ratios(all_raffles_vec.begin(), all_raffles_vec, global_output);
 		//close_global_outputs();
 
+		for (int ball_num=1; ball_num <= MAXIMAL_BALL_NUMBER; ++ball_num) {
+			Ball_Appearances<RAFFLES_FOR_PREDICTION> raffle_to_predict(ball_num, all_raffles_vec, all_raffles_vec.begin());
+			
+			std::vector<Result_Balls>::iterator begin_of_training_set = all_raffles_vec.begin();
+			++begin_of_training_set;
 
-
+			Ball_ANN<RAFFLES_FOR_PREDICTION> ball_ann(ball_num);
+			ball_ann.train(all_raffles_vec, begin_of_training_set);
+			
+			raffle_to_predict.print();
+			cout << "Predcition val: " << ball_ann.classify(raffle_to_predict) << endl;
+		}
+		
 		cout << "Done with "<< output_filename_date + output_filename_postfix; 
 		cout << " (Validation Len: " << VALIDATION_VECTOR_LENGTH << ")" << endl;
 	}
-
-	ANN sample_ann;
-	sample_ann.classify();
 
 	//Close outputs 
 	cout << "Done!" << endl;

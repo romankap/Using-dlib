@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_DEPRECATE
 #include "globals.h"
 
 //-----------------------------------------------------------
@@ -11,6 +12,8 @@ const int GENETIC_ALGORITHM_ITERATIONS_NUMBER = 200;
 const int BALLS_IN_RAFFLE = 6;
 //const int MAXIMAL_BALL_NUMBER = 37;
 const int MAXIMAL_STRONG_BALL_NUMBER = 7;
+
+const int RAFFLES_TO_IGNORE = 10;
 
 const int RAFFLES_NUMBER_ARRAY_LENGTH = 8;
 const int RAFFLES_NUMBER_ARRAY[RAFFLES_NUMBER_ARRAY_LENGTH] = {3, 5, 10, 15, 20, 30, 50, 100}; 

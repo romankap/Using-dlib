@@ -40,7 +40,8 @@ extern const int MAXIMAL_STRONG_BALL_NUMBER;
 extern const int RAFFLES_NUMBER_ARRAY_LENGTH;
 extern const int RAFFLES_NUMBER_ARRAY[]; 
 
-#define RAFFLES_FOR_PREDICTION = 50;
+#define RAFFLES_FOR_PREDICTION 50
+extern const int RAFFLES_TO_IGNORE;
 
 extern const string input_filename_date;
 extern string output_filename_date;

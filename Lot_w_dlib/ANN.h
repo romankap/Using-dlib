@@ -7,7 +7,7 @@
 // This typedef declares a matrix with 2 rows and 1 column.  It will be the
 // object that contains each of our 2 dimensional samples.   (Note that if you wanted 
 // more than 2 features in this vector you can simply change the 2 to something else)
-typedef dlib::matrix<double, 2, 1> sample_type;
+
 typedef dlib::matrix<double, MAXIMAL_BALL_NUMBER, 1> raffle_result;
 
 class ANN {

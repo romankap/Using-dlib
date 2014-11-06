@@ -4,7 +4,7 @@ using namespace std;
 using namespace dlib;
 
 void ANN::classify() {
-
+	/*
     // The mlp takes column vectors as input and gives column vectors as output.  The dlib::matrix
     // object is used to represent the column vectors. So the first thing we do here is declare 
     // a convenient typedef for the matrix object we will be using.
@@ -56,4 +56,5 @@ void ANN::classify() {
     sample(0) = 13.123;
     sample(1) = 0;
     cout << "This sample should be close to 0 and it is classified as a " << net(sample) << endl;
+	*/
 }

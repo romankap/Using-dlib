@@ -47,12 +47,12 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\Roman\Dropbox\TheGame\Lot_w_dlib\Lot_w_dlib\dlib-18.10;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Roman\Documents\GitHub\Using-dlib\Lot_w_dlib\dlib-18.10;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -84,7 +84,7 @@
     <ClInclude Include="ANN.h" />
     <ClInclude Include="Ball_Appearances.h" />
     <ClInclude Include="globals.h" />
-    <ClInclude Include="Raffles_ANN.h" />
+    <ClInclude Include="Ball_ANN.h" />
     <ClInclude Include="Result_Balls.h" />
   </ItemGroup>
   <ItemGroup>
@@ -93,10 +93,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="ANN.cpp" />
-    <ClCompile Include="Ball_Appearances.cpp" />
     <ClCompile Include="globals.cpp" />
     <ClCompile Include="Lot_w_dlib.cpp" />
-    <ClCompile Include="Raffles_ANN.cpp" />
     <ClCompile Include="Result_Balls.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
